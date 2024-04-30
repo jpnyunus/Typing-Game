@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Game</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="flex flex-col justify-center items-center min-h-screen bg-slate-700">
+
+    <div id="container" class="container flex flex-col justify-center items-center p-4">
+        <div class="card flex flex-col items-center w-96 bg-slate-800 rounded">
+            <h1 class="text-white text-2xl font-bold m-4">Type FAST!</h1>
+            <h5 id class="text-white">Time Left: <span id="timeleft">10s</span></h5>
+            <h5 class="text-white">Score: <span id="score">0</span></h5>
+            <p class="text-white mt-12 text-sm">type the following:</p>
+            <h1 id="word" class="word text-white bg-black text-3xl font-bold p-3 text-center rounded-sm"></h1>
+            <input onpaste="return false;" id="typeword" autocomplete="off" class="h-10 w-60 text-center mt-6 rounded" type="text" placeholder="TYPE HERE!">
+            <div class="mt-6" id="nuhuh"></div>
+        </div>
+    </div>
+
+    <div class="levelContainer">
+        <select id="levels" class="w-64 p-4 rounded-lg">
+            <option id="easy" value=1>Easy</option>
+            <option id="medium" value=2>Medium</option>
+            <option id="hard" value=3>Hard</option>
+        </select>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
