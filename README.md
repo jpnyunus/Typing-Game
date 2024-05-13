@@ -1,4 +1,4 @@
-## Simple Typing Game made with Vanilla JS + Tailwind using API and localStorage
+## Simple Typing Game made with JavaScript + Tailwind using API and localStorage
 
 📝 With this project i practiced API and localStorage
 
